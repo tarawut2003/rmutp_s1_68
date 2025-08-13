@@ -2,3 +2,5 @@ node_modules
 generated
 /generated/prisma
 .env
+
+/generated/prisma
