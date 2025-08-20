@@ -6,7 +6,7 @@ app.get("/",(c) => c.text("Hello World"));
 
 app.get("/about",(c) => {
     return c.json({
-        message:"about message"
+        message:"Tarawut"
     })
 });
 
