@@ -2,6 +2,14 @@
 
 Tarawut Sri-on
 
+## Required
+- Git
+- Docker 
+- PostgresSQL
+- Node.JS
+- Prisma
+- Vscode( PostgreSQL Extension (Chris Kolkman))
+
 ## Running
 ### Database
 ```
@@ -19,4 +27,12 @@ npx prisma studio
 
 ```bash
 npx prisma generate
+```
+
+## Update schema
+run these command
+```bash
+npx prisma generate 
+npx prisma db push 
+npx prisma studio
 ```
