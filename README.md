@@ -42,3 +42,9 @@ Update schema
 ```
 npx prisma generate
 ```
+
+## Hono
+```
+npm tsc app/server.ts //compile ts > js
+node dist/server.js //run server to localhost 3000
+```
