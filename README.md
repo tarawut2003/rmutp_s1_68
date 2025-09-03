@@ -9,6 +9,7 @@ Tarawut Sri-on
 - Node.JS
 - Prisma
 - Vscode( PostgreSQL Extension (Chris Kolkman))
+- Rest Client ( Extension for GET/POST)
 
 ## Running
 ### Database
@@ -47,4 +48,13 @@ npx prisma generate
 ```
 npm tsc app/server.ts //compile ts > js
 node dist/server.js //run server to localhost 3000
+```
+
+## CURL
+```
+curl http://localhost:3000/profile
+### get
+
+curl -X POST http://localhost:3000/profile
+### post
 ```

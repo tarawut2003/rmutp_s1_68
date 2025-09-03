@@ -1,0 +1,16 @@
+### get all profile
+
+GET http://localhost:3000/profile
+
+###
+POST http://localhost:3000/profile
+Content-Type: application/json
+
+{
+    "id":"demo",
+    "username":"demo",
+    "password":"demo",
+    "cardid":"demo",
+    "mobile":"demo",
+    "status":false
+}
