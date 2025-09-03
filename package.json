@@ -1,11 +1,12 @@
 {
   "scripts": {
     "build": "tsc",
-    "dev": "node ./dist/server.js"
+    "dev": "npm run build && node ./dist/server.js"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.0",
     "@prisma/client": "^6.13.0",
+    "bcrypt": "^6.0.0",
     "hono": "^4.9.2",
     "prisma": "^6.13.0",
     "ts-node": "^10.9.2",
