@@ -24,11 +24,16 @@ app.post("/profile", async(c)=>{
     console.log('body.password(original)', body.password);
 
     //encode password
-    const passwordHash = await bcrypt.hash(body.password, 18);
+    const passwordHash = await bcrypt.hash(body.password, 11);
     console.log('hash.password(after)', passwordHash);
-    //save to db 
+    body.password = passwordHash;
+    console.log("body.password(replace)", body);
     
-    return c.json({message: "create profile"});
+    //save to db 
+    body.status = false;
+    const result = await prisma.profile.create({data:body})
+    //output
+    return c.json({message: "complete",data: result});
 });
 
 export default app;

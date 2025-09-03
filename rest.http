@@ -11,6 +11,5 @@ Content-Type: application/json
     "username":"demo",
     "password":"demo",
     "cardid":"demo",
-    "mobile":"demo",
-    "status":false
+    "mobile":"demo"
 }

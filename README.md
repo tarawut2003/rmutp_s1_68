@@ -41,6 +41,7 @@ Update schema
 
 ## Normal
 ```
+npx prisma format ## clean code
 npx prisma generate
 ```
 
