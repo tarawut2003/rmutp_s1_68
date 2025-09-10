@@ -18,7 +18,7 @@ model Profile {
   id       String  @id @default(uuid())
   username String  @unique
   password String
-  cardid   String  @unique @db.VarChar(10)
-  mobile   String  @unique @db.VarChar(13)
+  cardid   String  @unique @db.VarChar(255) //10
+  mobile   String  @unique @db.VarChar(255) //13
   status   Boolean
 }
