@@ -47,7 +47,11 @@ app.post("/profile", async(c)=>{
     //error
     //c.status(503);
     //return c.json({message:"error",data:"data"});
-
 });
 
+app.get("/profile/:id", async (c)=>{
+    const id = c.req.param("id");
+    console.log('profile id', id);
+    return c.json({data:id});
+});
 export default app;
