@@ -3,3 +3,4 @@ generated
 /generated/prisma
 .env
 dist
+/dist
